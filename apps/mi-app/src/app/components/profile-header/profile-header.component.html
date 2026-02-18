@@ -1,0 +1,27 @@
+<p-card class="profile-card">
+  <div class="flex justify-end mb-4">
+    <p-button
+      label="Modo Oscuro"
+      (onClick)="onToggleDarkMode()"
+      icon="pi pi-moon"
+      class="dark-mode-btn"
+    />
+  </div>
+
+  <div class="flex flex-col items-center gap-6 py-8">
+    <p-avatar label="JO" size="xlarge" shape="circle" class="avatar-profile" />
+
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
+        {{ nombre }}
+      </h1>
+      <p class="text-lg text-gray-500 dark:text-gray-400 mt-2">{{ titulo }}</p>
+    </div>
+
+    <div class="flex gap-3 flex-wrap justify-center">
+      @for (tag of tags; track tag) {
+      <p-tag [value]="tag" severity="success" />
+      }
+    </div>
+  </div>
+</p-card>

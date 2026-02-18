@@ -1,0 +1,12 @@
+.skill-chip {
+  :deep(.p-chip) {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    border: none;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+    }
+  }
+}

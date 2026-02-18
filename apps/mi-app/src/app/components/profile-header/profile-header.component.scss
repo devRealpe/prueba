@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.profile-card {
+  :deep(.p-card) {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+}
+
+.avatar-profile {
+  :deep(.p-avatar) {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.3);
+  }
+}
+
+.dark-mode-btn {
+  :deep(.p-button) {
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

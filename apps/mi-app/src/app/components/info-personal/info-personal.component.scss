@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.info-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .info-item {
+    border-bottom-color: #374151;
+  }
+}

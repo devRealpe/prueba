@@ -1,0 +1,16 @@
+<p-card header="Información Personal">
+  <div class="grid grid-cols-2 gap-6">
+    @for (info of informacion; track info.label) {
+    <div class="info-item">
+      <p
+        class="font-semibold text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide"
+      >
+        {{ info.label }}
+      </p>
+      <p class="text-base text-gray-900 dark:text-white mt-1">
+        {{ info.valor }}
+      </p>
+    </div>
+    }
+  </div>
+</p-card>

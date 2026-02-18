@@ -3,6 +3,15 @@
     <!-- Tarjeta principal del perfil -->
     <p-card>
       <p-button label="Modo Oscuro" (onClick)="toggleDarkMode()" />
+      <p-cascadeselect
+        [(ngModel)]="selectedCity"
+        [options]="countries"
+        optionLabel="cname"
+        optionGroupLabel="name"
+        [optionGroupChildren]="['states', 'cities']"
+        [style]="{ minWidth: '14rem' }"
+        placeholder="Select a City"
+      />
       <div class="flex flex-col items-center gap-4 py-4">
         <p-avatar
           label="JO"
